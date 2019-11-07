@@ -8,6 +8,7 @@ import com.ashokvarma.bottomnavigation.BottomNavigationItem
 import com.ashokvarma.bottomnavigation.ShapeBadgeItem
 import com.ashokvarma.bottomnavigation.TextBadgeItem
 import com.fishinwater.shoppingmallkotlin.R
+import kotlinx.android.synthetic.main.fragment_home.view.*
 
 class BottomNavBar  @JvmOverloads constructor (
     context : Context, attrs : AttributeSet?= null, defStyleAttr : Int = 0
@@ -73,6 +74,7 @@ class BottomNavBar  @JvmOverloads constructor (
             .setMode(MODE_FIXED)
             .setFirstSelectedPosition(0)
             .initialise()
+
     }
 
     /**

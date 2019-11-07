@@ -11,6 +11,7 @@ import com.fishinwater.shoppingmallkotlin.widgets.BannerImageLoader
 import com.youth.banner.BannerConfig
 import com.youth.banner.Transformer
 import kotlinx.android.synthetic.main.fragment_home.*
+import kotlinx.android.synthetic.main.view_flipper.*
 
 class HomeFragment : Fragment() {
 
@@ -32,6 +33,7 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         iniBanner()
+        iniViewFlipper()
     }
 
     private fun iniBanner() {
@@ -40,12 +42,29 @@ class HomeFragment : Fragment() {
             // 图片资源
             setImages(listOf(BANNER_FIRST, BANNER_SECOND, BANNER_THIRD, BANNER_FORTH))
             setBannerAnimation(Transformer.Accordion)
-            setDelayTime(2000)
+            setDelayTime(3000)
             // 设置指示器位置（ 当 Banner 有指示器时 ）
             setIndicatorGravity(BannerConfig.RIGHT)
             // Banner 所有方法调用完后调用
             start()
         }
+    }
+
+    private fun iniViewFlipper() {
+        mViewFlipper.isAutoStart = true
+        mViewFlipper.setFlipInterval(3000)
+        mViewFlipper.startFlipping()
+    }
+
+    override fun onStop() {
+        mViewFlipper.stopFlipping()
+        super.onStop()
+    }
+
+    override fun onResume() {
+        if (mViewFlipper != null)
+            mViewFlipper.startFlipping()
+        super.onResume()
     }
 
 }

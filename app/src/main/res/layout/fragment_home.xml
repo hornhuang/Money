@@ -31,4 +31,21 @@
         android:layout_width="match_parent"
         android:layout_height="150dp" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="@string/home_announcement"/>
+
+        <include layout="@layout/view_flipper"/>
+
+    </LinearLayout>
+
 </LinearLayout>
