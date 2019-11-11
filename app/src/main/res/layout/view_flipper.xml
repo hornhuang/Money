@@ -28,7 +28,7 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:gravity="center"
-            android:text="Android 贱卖 贱卖 一块钱四个！"
+            android:text="@string/announcement_1"
             android:textColor="@android:color/white"
             android:textSize="18dp"
             android:textStyle="bold" />
@@ -53,7 +53,7 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:gravity="center"
-            android:text="Android 贱卖 贱卖 一块钱四个！"
+            android:text="@string/announcement_2"
             android:textSize="18dp"
             android:textStyle="bold" />
 
@@ -77,7 +77,7 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:gravity="center"
-            android:text="大前端崛起 我们未来路在何方？"
+            android:text="@string/announcement_3"
             android:textSize="18dp"
             android:textStyle="bold" />
 

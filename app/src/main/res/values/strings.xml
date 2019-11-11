@@ -11,5 +11,7 @@
     <string name="home_announcement">公告</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="announcement_1">大前端崛起 我们未来路在何方？</string>
+    <string name="announcement_2">Android 贱卖 贱卖 一块钱四个！</string>
+    <string name="announcement_3">Android 贱卖 贱卖 一块钱四个！</string>
 </resources>

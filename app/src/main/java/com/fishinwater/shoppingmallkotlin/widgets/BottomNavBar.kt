@@ -32,7 +32,7 @@ class BottomNavBar  @JvmOverloads constructor (
 
         // 首页
         val categoryItem = BottomNavigationItem(R.drawable.btn_nav_category_press, resources.getString(R.string.nav_bar_category))
-            .setInactiveIconResource(R.drawable.btn_nav_category_press)
+            .setInactiveIconResource(R.drawable.btn_nav_category_normal)
             .setActiveColorResource(R.color.colorPrimary)
             .setInActiveColorResource(R.color.colorPrimaryDark)
 

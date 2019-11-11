@@ -44,4 +44,6 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'
     // 添加自定义控件
     implementation project(":newsflipperview")
+    // 活动左上角三角图标
+    implementation 'com.github.shts:TriangleLabelView:1.1.2'
 }
