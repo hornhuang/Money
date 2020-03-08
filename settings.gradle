@@ -1,2 +1,0 @@
-include ':app', ':newsflipperview'
-rootProject.name='ShoppingMallKotlin'
